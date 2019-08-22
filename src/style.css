@@ -1,6 +1,28 @@
 
-h1 {
-  font-size: 50px;
+div#root {
+  font-size: 30px;
   margin: 20px;
-  padding: 10px 0 0 400px;
+  padding: 10px 0 0 450px;
+}
+
+form#Cod{
+  font-size: 20px;
+  margin: 20px;
+}
+
+input#offsetcd{
+  width: 40px;
+
+}
+
+input#MessageC{
+  width: 150px;
+  border-style: solid;
+  margin: 20px;
+}
+
+input#MessageCd{
+  width: 150px;
+  border-style: solid;
+  margin: 20px;
 }
