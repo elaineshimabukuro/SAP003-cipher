@@ -5,7 +5,7 @@ window.cipher = {
     for(let i=0; i<MessageC.length; i++){
       let iLetter = MessageC[i].charCodeAt();
       let newILetter = (iLetter - 65 + offsetcd) % 26 + 65;
-      let crpty =  String.fromCharCode(newILetter)
+      let crpty =  String.fromCharCode(newILetter);
 
 
       valcrypt = valcrypt + crpty;
@@ -14,7 +14,19 @@ window.cipher = {
 
     return valcrypt
   },
-  cipherDecode:function (MessageD, offsetdc){
 
+  cipherDecode:function (MessageD, offsetdc){
+    let valDcrypt = ""
+
+    for(let i=0; i<MessageD.length; i++){
+      let iLetter = MessageD[i].charCodeAt();
+      console.log(iLetter)
+      let newILetter = (iLetter - 90 - offsetdc) %26 + 90;
+      let decrpty =  String.fromCharCode(newILetter);
+
+      valDcrypt = valDcrypt + decrpty;
   }
+
+    return valDcrypt;
+}
 }
