@@ -1,10 +1,9 @@
 function btEncode (){
-  let MessageCd = document.getElementById('MessageC').value;
-  let OffsetCd = document.getElementById('offsetcd').value;
+  let MessageCd = document.getElementById('MessageC').value.toUpperCase();
+  let OffsetCd = Number(document.getElementById('offsetcd').value);
+  let valcrypt = window.cipher.cipherEncode(MessageCd, OffsetCd)
 
-  // ...
-
-  document.getElementById("MessageCd").innerHTML = cipherEncode;
+  document.getElementById("MessageCd").value = valcrypt;
 }
 
 function btnDecode (){

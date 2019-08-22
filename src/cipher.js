@@ -1,18 +1,20 @@
 window.cipher = {
-  cipherEncode = enconde
-  cipherDecode = decode
-}
+  cipherEncode:function (MessageC, offsetcd){
+    let valcrypt = ""
 
-  function cipherEncode(MessageC, offsetcd){
-    let letter = []
-     for (i = 0; i = )
-     (MessageC;((MessageC.charCodeAt() - 65 + offsetcd)%26 +65);)
+    for(let i=0; i<MessageC.length; i++){
+      let iLetter = MessageC[i].charCodeAt();
+      let newILetter = (iLetter - 65 + offsetcd) % 26 + 65;
+      let crpty =  String.fromCharCode(newILetter)
+
+
+      valcrypt = valcrypt + crpty;
 
     }
 
-  };
+    return valcrypt
+  },
+  cipherDecode:function (MessageD, offsetdc){
 
-  function cipherDecode (MessageD, offsetdc){
-
-  };
-};
+  }
+}
