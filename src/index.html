@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <div id="root">
       <h1>Bem vindo!</h1>
-
     </div>
+
+<!--<figure>
+  <img src="(http://www.feltex.com.br/felix/wp-content/uploads/2014/11/Criptografia.png)">
+</figure> -->
 
     <form id="Cod">
       <label for="MessageC">Palavra</label>
@@ -17,7 +22,7 @@
           type="text"
           id="MessageC"
           name="MessageC"
-        />
+        /><br>
           <label for="Key">Chave </label>
             <input
               type="number"
@@ -25,14 +30,14 @@
               name="Key"
             />
 
-        <button type="button" id="buttonCD" name="buttonCD" onclick="btEncode()">Codificar</button>
+        <button type="button" id="buttonCD" name="buttonCD" onclick="btEncode()">Codificar</button><br>
 
             <label for="MessageCd">Palavra codificada</label>
               <input
                 type="text"
                 id="MessageCd"
                 name="MessageCd"
-              />
+              /><br>
 
     </form>
 
@@ -41,17 +46,17 @@
         <input
           type="text"
           id="MessageD"
-          placeholder="Write here the message"
           name="MessageD"
-        />
-      <label for="Key">Chave de deslocamento </label>
+        /><br>
+
+      <label for="Key">Chave </label>
         <input
           type="number"
           id="offsetdc"
           name="Key"
         />
 
-      <button type="button" name="buttonDC" onclick="btDecode()">Decodificar</button>
+      <button type="button" name="buttonDC" onclick="btDecode()">Decodificar</button><br>
 
         <label for="MessageDc">Mensagem Decodificada</label>
           <input
@@ -59,7 +64,7 @@
             id="MessageDc"
             name="MessageDc"
           />
-    </form>
+    </form><br>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

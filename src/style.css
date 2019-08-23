@@ -1,28 +1,81 @@
+body{
+  background-image: url(http://www.feltex.com.br/felix/wp-content/uploads/2014/11/Criptografia.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment: fixed;
 
+
+}
+
+/*caracteristicas do header*/
 div#root {
-  font-size: 30px;
-  margin: 20px;
+  display: inline-block;
+  font-size: 40px;
+  position:absolute;
+  margin: 120px 0px 50px 0px;
   padding: 10px 0 0 450px;
 }
 
+/*caracteristicas figure
+figure{
+  position: absolute;
+  align-content: center;
+  opacity: 0.5;
+}
+
+/*caracteristicas do formulário de Codificar*/
 form#Cod{
+  display: inline-block;
   font-size: 20px;
-  margin: 20px;
+  font-family: fantasy, sans-serif;
+  position: relative;
+  margin-left: 40px;
+
 }
 
 input#offsetcd{
   width: 40px;
-
+  border-style: solid;
 }
 
 input#MessageC{
   width: 150px;
   border-style: solid;
   margin: 20px;
+  padding-right: 20px;
 }
 
 input#MessageCd{
   width: 150px;
   border-style: solid;
   margin: 20px;
+  padding-left: 20px;
+}
+/*caracteristicas do formulário de Decodificar*/
+form#Decod{
+  display: block;
+  font-size: 20px;
+  font-family: font-family: 'Indie Flower', cursive;
+  position: relative;
+  float: right;
+  margin: 400px 0 0 0;
+}
+
+input#offsetdc{
+  width: 40px;
+  border-style: solid;
+}
+
+input#MessageD{
+  width: 150px;
+  border-style: solid;
+  margin: 20px;
+  padding-right: 20px;
+}
+
+input#MessageDc{
+  width: 150px;
+  border-style: solid;
+  margin: 20px;
+  padding-left: 20px;
 }

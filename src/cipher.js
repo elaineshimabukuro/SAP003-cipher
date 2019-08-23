@@ -3,11 +3,11 @@ window.cipher = {
     let valcrypt = ""
 
     for(let i=0; i<MessageC.length; i++){
-      let iLetter = MessageC[i].charCodeAt();
+      let iLetter = MessageC[i].charCodeAt(); 
       let newILetter = (iLetter - 65 + offsetcd) % 26 + 65;
       let crpty =  String.fromCharCode(newILetter);
 
-
+/*concatenação das letras percorridas*/
       valcrypt = valcrypt + crpty;
 
     }
@@ -24,6 +24,7 @@ window.cipher = {
       let newILetter = (iLetter - 90 - offsetdc) %26 + 90;
       let decrpty =  String.fromCharCode(newILetter);
 
+/*concatenação das letras percorridas*/
       valDcrypt = valDcrypt + decrpty;
   }
 

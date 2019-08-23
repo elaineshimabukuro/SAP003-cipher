@@ -1,3 +1,4 @@
+/*função do botão de Codificar*/
 function btEncode (){
   let MessageCd = document.getElementById('MessageC').value.toUpperCase();
   let OffsetCd = Number(document.getElementById('offsetcd').value);
@@ -5,7 +6,7 @@ function btEncode (){
 
   document.getElementById("MessageCd").value = valcrypt
 }
-
+/*função do botão de Decodificar*/
 function btDecode (){
   let MessageDc = document.getElementById('MessageD').value.toUpperCase();
   let OffsetDc = Number(document.getElementById('offsetdc').value);
