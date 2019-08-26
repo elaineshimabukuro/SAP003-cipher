@@ -4,7 +4,7 @@ function btEncode (){
   let OffsetCd = Number(document.getElementById('offsetcd').value);
   let valcrypt = window.cipher.cipherEncode(MessageCd, OffsetCd)
 
-  document.getElementById("MessageCd").value = valcrypt
+  document.getElementById("valcrypt").innerHTML = valcrypt;
 }
 /*função do botão de Decodificar*/
 function btDecode (){
@@ -12,6 +12,5 @@ function btDecode (){
   let OffsetDc = Number(document.getElementById('offsetdc').value);
   let valDcrypt = window.cipher.cipherDecode(MessageDc, OffsetDc)
 
-
-  document.getElementById("MessageDc").value = valDcrypt
-}
+  document.getElementById("valDcrypt").innerHTML = valDcrypt;
+  }

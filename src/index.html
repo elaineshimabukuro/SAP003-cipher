@@ -4,20 +4,23 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lexend+Zetta|Patrick+Hand|Permanent+Marker&display=swap" rel="stylesheet">
 
   </head>
   <body>
     <div id="root">
-      <h1>Bem vindo!</h1>
+      <h1>LORIAN LEGACIES</h1>
+    </div>
+    <div id="subtitle">
+      <h2>Find the others!</h2>
     </div>
 
 <!--<figure>
-  <img src="(http://www.feltex.com.br/felix/wp-content/uploads/2014/11/Criptografia.png)">
-</figure> -->
+  <img src="(https://i.pinimg.com/originals/2f/f4/7f/2ff47f3e92cc784e5dd607978b92f700.jpg)">
+</figure>-->
 
     <form id="Cod">
-      <label for="MessageC">Palavra</label>
+      <label for="MessageC">Mensagem</label><br>
         <input
           type="text"
           id="MessageC"
@@ -32,17 +35,23 @@
 
         <button type="button" id="buttonCD" name="buttonCD" onclick="btEncode()">Codificar</button><br>
 
-            <label for="MessageCd">Palavra codificada</label>
+        <p>Sua mensagem codificada é:</p>
+
+        <div id="valcrypt">
+
+        </div>
+
+          <!--  <label for="MessageCd">Mensagem codificada</label>
               <input
                 type="text"
                 id="MessageCd"
                 name="MessageCd"
-              /><br>
+              /><br> -->
 
     </form>
 
     <form id="Decod">
-      <label for="MessageD">Mensagem</label>
+      <label for="MessageD">Mensagem</label><br>
         <input
           type="text"
           id="MessageD"
@@ -58,12 +67,17 @@
 
       <button type="button" name="buttonDC" onclick="btDecode()">Decodificar</button><br>
 
-        <label for="MessageDc">Mensagem Decodificada</label>
+      <p>Sua mensagem Decodificada é:</p>
+
+      <div id="valDcrypt">
+
+      </div>
+        <!--<label for="MessageDc">Mensagem Decodificada</label>
           <input
             type="text"
             id="MessageDc"
             name="MessageDc"
-          />
+          />-->
     </form><br>
 
     <script src="cipher.js"></script>
