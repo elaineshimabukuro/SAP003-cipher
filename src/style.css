@@ -37,8 +37,10 @@ form#Cod{
   font-size: 20px;
   font-family: 'Patrick Hand', cursive;
   position: relative;
-  margin: 180px 0px 0px 20px;
-
+  top: 180px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
 }
 
 input#offsetcd{
@@ -64,8 +66,12 @@ form#Decod{
   font-size: 20px;
   font-family: 'Patrick Hand', cursive;
   position: relative;
+  top: 180px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
   float: right;
-  margin: 180px 20px 0px 0px;
+  /*margin: 180px 20px 0px 0px;*/
 }
 
 input#offsetdc{
