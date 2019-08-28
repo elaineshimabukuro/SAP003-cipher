@@ -1,7 +1,8 @@
 window.cipher = {
   encode: cipherEncode,
-  decode: cipherDecode,
+  decode: cipherDecode
 };
+
 function cipherEncode(offsetcd, MessageC) {
   let valcrypt = "";
 
@@ -30,5 +31,4 @@ function cipherDecode(offsetdc, MessageD) {
   }
 
   return valDcrypt;
-
 }
