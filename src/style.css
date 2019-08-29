@@ -10,8 +10,8 @@ body{
 div#root {
   display: inline-block;
   font-family: 'Lexend Zetta', sans-serif;
-  font-size: 40px;
-  position:absolute;
+  font-size: 35px;
+  position:relative;
   top: auto;
   bottom: auto;
   right: 10%;
@@ -37,10 +37,10 @@ form#Cod{
   text-align: center;
   font-size: 25px;
   font-family: 'Patrick Hand', cursive;
-  position: relative;
+  position: absolute;
   top: 180px;
   bottom: 0px;
-  right: 0px;
+  right: 900px;
   left: 0px;
 }
 
@@ -66,11 +66,11 @@ form#Decod{
   text-align: center;
   font-size: 25px;
   font-family: 'Patrick Hand', cursive;
-  position: relative;
+  position: absolute;
   top: 180px;
-  bottom: 0px;
+  bottom: 350px;
   right: 0px;
-  left: 0px;
+  left: 900px;
   float: right;
 
 }
