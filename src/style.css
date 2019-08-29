@@ -3,16 +3,20 @@ body{
   background-repeat:no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-position-y: 170px;
+  background-position-y: 200px;
 }
 
 /*caracteristicas do header*/
 div#root {
   display: inline-block;
   font-family: 'Lexend Zetta', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   position:absolute;
-  margin: 0px 0px 0px 250px;
+  top: auto;
+  bottom: auto;
+  right: 10%;
+  left: 17%;
+
 }
 
 div#subtitle {
@@ -20,21 +24,18 @@ div#subtitle {
   font-family: 'Lexend Zetta', sans-serif;
   font-size: 10px;
   position:absolute;
-  margin: 0px 0px 0px 250px;
+  top: 3%;
+  bottom: auto;
+  right: 12%;
+  left: 17.5%;
 }
 
-/*caracteristicas figure
-figure{
-  position: absolute;
-  align-content: center;
-  opacity: 0.5;
-}*/
 
 /*caracteristicas do formulário de Codificar*/
 form#Cod{
   display: inline-block;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Patrick Hand', cursive;
   position: relative;
   top: 180px;
@@ -63,7 +64,7 @@ input#MessageC{
 form#Decod{
   display: inline-block;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Patrick Hand', cursive;
   position: relative;
   top: 180px;
@@ -71,7 +72,7 @@ form#Decod{
   right: 0px;
   left: 0px;
   float: right;
-  /*margin: 180px 20px 0px 0px;*/
+
 }
 
 input#offsetdc{
