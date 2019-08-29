@@ -7,12 +7,20 @@ function cipherEncode(offsetcd, MessageC) {
   let valcrypt = "";
 
   for (let i=0; i<MessageC.length; i++) {
-    let iLetter = MessageC[i].charCodeAt();
-    let newILetter = (iLetter - 65 + offsetcd) % 26 + 65;
-    let crpty = String.fromCharCode(newILetter);
+    let newChar = "";
 
-    /*concatenação das letras percorridas*/
-    valcrypt = valcrypt + crpty;
+    if (MessageC[i] === " ") {
+      newChar = MessageC[i];
+    }
+    else {
+      let iLetter = MessageC[i].charCodeAt();
+      let newILetter = (iLetter - 32 + offsetcd) % 93 + 32;
+      let crpty = String.fromCharCode(newILetter);
+
+      newChar = crpty;
+    }
+    // concatenação das letras percorridas
+    valcrypt = valcrypt + newChar;
   }
 
   return valcrypt;
@@ -22,13 +30,22 @@ function cipherDecode(offsetdc, MessageD) {
   let valDcrypt = "";
 
   for (let i=0; i<MessageD.length; i++) {
-    let iLetter = MessageD[i].charCodeAt();
-    let newILetter = (iLetter - 90 - offsetdc) %26 + 90;
-    let decrpty = String.fromCharCode(newILetter);
+    let newCharD = "";
 
+    if (MessageD[i] === " ") {
+      newCharD = MessageD[i];
+    }
+    else {
+      let iLetter = MessageD[i].charCodeAt();
+      let newILetter = (iLetter - 126 - offsetdc) %93 + 126;
+      let decrpty = String.fromCharCode(newILetter);
+
+      newCharD = decrpty;
+    }
     /*concatenação das letras percorridas*/
-    valDcrypt = valDcrypt + decrpty;
+    valDcrypt = valDcrypt + newCharD;
   }
 
   return valDcrypt;
+
 }

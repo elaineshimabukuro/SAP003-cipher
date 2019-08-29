@@ -2,7 +2,7 @@
 document.getElementById("buttonCD").addEventListener("click", btEncode);
 
 function btEncode() {
-  let MessageCd = document.getElementById("MessageC").value.toUpperCase();
+  let MessageCd = document.getElementById("MessageC").value;
   let OffsetCd = Number(document.getElementById("offsetcd").value);
   let valcrypt = window.cipher.encode(OffsetCd, MessageCd);
 
@@ -13,7 +13,7 @@ function btEncode() {
 document.getElementById("buttonDC").addEventListener("click", btDecode);
 
 function btDecode() {
-  let MessageDc = document.getElementById("MessageD").value.toUpperCase();
+  let MessageDc = document.getElementById("MessageD").value;
   let OffsetDc = Number(document.getElementById("offsetdc").value);
   let valDcrypt = window.cipher.decode(OffsetDc, MessageDc);
 
