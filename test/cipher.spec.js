@@ -42,7 +42,7 @@ describe("cipher", () => {
     // teste abaixo.
     //
     it("should return !@ for !@", () => {
-      assert.equal(cipher.encode(33, " !@"), " !@");
+      assert.equal(cipher.encode(32, " !@"), " !@");
     });
   });
 
