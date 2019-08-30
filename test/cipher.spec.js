@@ -42,7 +42,7 @@ describe("cipher", () => {
     // teste abaixo.
     //
     it("should return !@ for !@", () => {
-      assert.equal(cipher.encode(32, " !@"), " !@");
+      assert.equal(cipher.encode(33, " !@"), " !@");
     });
   });
 
@@ -66,7 +66,7 @@ describe("cipher", () => {
     // [Português]
     // Se quiser adicionar testes para letras minúsculas, descomente o teste
     // abaixo.
-    
+
     it("should return 'abcdefghijklmnopqrstuvwxyz' for 'hijklmnopqrstuvwxyzabcdefg' with offset 33", () => {
       assert.equal(
         cipher.decode(33, "hijklmnopqrstuvwxyzabcdefg"),
@@ -83,9 +83,9 @@ describe("cipher", () => {
     // [Português]
     // Se quiser adicionar testes para caracteres não alfabéticos, descomente o
     // teste abaixo.
-    
+
     it("should return ' !@' para ' !@'", () => {
-      assert.equal(cipher.decode(32, " !@"), " !@");
+      assert.equal(cipher.decode(33, " !@"), " !@");
     });
   });
 

@@ -1,4 +1,4 @@
-# Lorian Legacies (Projeto Cifra de César)
+# Lorian Legacies gameCode (Projeto Cifra de César)
 
 ## Cifra de César
 
