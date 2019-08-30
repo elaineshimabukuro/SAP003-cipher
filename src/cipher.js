@@ -11,7 +11,7 @@ function cipherEncode(offsetcd, MessageC) {
     let newILetter = 0;
     let iLetter = MessageC[i].charCodeAt();
 
-    if (MessageC[i] === " ") {
+    if (iLetter === 32) {
       crypt = MessageC[i];
     }
     else if (64 >= iLetter && iLetter >= 33) {
@@ -22,7 +22,7 @@ function cipherEncode(offsetcd, MessageC) {
       newILetter = (iLetter - 65 + offsetcd) % 26 + 65;
       crypt = String.fromCharCode(newILetter);
     }
-    else if (96 >= iLetter && iLetter >= 91) {
+    else if (96 >= iLetter && iLetter >= 91) { // sem cobertura de teste de unidade
       newILetter = (iLetter - 91 + offsetcd) % 6 + 91;
       crypt = String.fromCharCode(newILetter);
     }
@@ -30,11 +30,11 @@ function cipherEncode(offsetcd, MessageC) {
       newILetter = (iLetter - 97 + offsetcd) % 26 + 97;
       crypt = String.fromCharCode(newILetter);
     }
-    else if (126 >= iLetter && iLetter >= 123) {
+    else if (126 >= iLetter && iLetter >= 123) { // sem cobertura de teste de unidade
       newILetter = (iLetter - 123 + offsetcd) % 4 + 123;
       crypt = String.fromCharCode(newILetter);
     }
-    else {
+    else { // sem cobertura de teste de unidade
       continue;
     }
 
@@ -44,22 +44,6 @@ function cipherEncode(offsetcd, MessageC) {
 
   return valcrypt;
 }
-/*if (MessageC[i] === " ") {
-  newChar = MessageC[i];
-}
-else {
-  let iLetter = MessageC[i].charCodeAt();
-  let newILetter = (iLetter - 32 + offsetcd) % 93 + 32;
-  let crpty = String.fromCharCode(newILetter);
-
-  newChar = crpty;
-}
-// concatenação das letras percorridas
-valcrypt = valcrypt + newChar;
-}
-
-return valcrypt;
-}*/
 
 function cipherDecode(offsetdc, MessageD) {
   let valDcrypt = "";
@@ -80,7 +64,7 @@ function cipherDecode(offsetdc, MessageD) {
       newILetter = (iLetter - 90 - offsetdc) % 26 + 90;
       Dcrypt = String.fromCharCode(newILetter);
     }
-    else if (96 >= iLetter && iLetter >= 91) {
+    else if (96 >= iLetter && iLetter >= 91) { // sem cobertura de teste de unidade
       newILetter = (iLetter - 96 - offsetdc) % 6 + 96;
       Dcrypt = String.fromCharCode(newILetter);
     }
@@ -88,11 +72,11 @@ function cipherDecode(offsetdc, MessageD) {
       newILetter = (iLetter - 122 - offsetdc) % 26 + 122;
       Dcrypt = String.fromCharCode(newILetter);
     }
-    else if (126 >= iLetter && iLetter >= 123) {
+    else if (126 >= iLetter && iLetter >= 123) { // sem cobertura de teste de unidade
       newILetter = (iLetter - 126 - offsetdc) % 4 + 126;
       Dcrypt = String.fromCharCode(newILetter);
     }
-    else {
+    else { // sem cobertura de teste de unidade
       continue;
     }
 
@@ -102,26 +86,3 @@ function cipherDecode(offsetdc, MessageD) {
 
   return valDcrypt;
 }
-
-/*function cipherDecode(offsetdc, MessageD) {
-  let valDcrypt = "";
-
-  for (let i = 0; i < MessageD.length; i++) {
-    let newCharD = "";
-
-    if (MessageD[i] === " ") {
-      newCharD = MessageD[i];
-    }
-    else {
-      let iLetter = MessageD[i].charCodeAt();
-      let newILetter = (iLetter - 126 - offsetdc) % 93 + 126;
-      let decrpty = String.fromCharCode(newILetter);
-
-      newCharD = decrpty;
-    }
-    /*concatenação das letras percorridas*/
-// valDcrypt = valDcrypt + newCharD;
-// }
-// return valDcrypt;
-
-//}
