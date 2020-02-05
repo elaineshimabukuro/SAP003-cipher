@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lexend+Zetta|Patrick+Hand|Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lexend+Zetta|Cambay|Patrick+Hand|Permanent+Marker&display=swap" rel="stylesheet">
 
   </head>
   <body>
-    <div id="root">
+    <header>
       <h1>LORIAN LEGACIES</h1>
-    </div>
-    <div id="subtitle">
       <h2>Find the others!</h2>
-    </div>
+    </header>
 
-    <form id="Cod">
+    <div class="container">
+    <form class="form">
       <label for="MessageC">Mensagem</label><br>
         <input
           type="text"
+          class="message"
           id="MessageC"
           name="MessageC"
         /><br>
@@ -26,13 +26,15 @@
             <input
               type="number"
               min="0"
+              class="offset"
               id="offsetcd"
               name="Key"
             />
 
-        <button type="button" id="buttonCD" name="buttonCD">Codificar</button><br>
+        <button type="button" id="buttonCD" class="button" name="buttonCD">Codificar</button><br>
 
         <p>Sua mensagem codificada é:</p>
+       
 
         <div id="valcrypt">
 
@@ -40,10 +42,12 @@
 
     </form>
 
-    <form id="Decod">
+    
+    <form class="form">
       <label for="MessageD">Mensagem</label><br>
         <input
           type="text"
+          class="message"
           id="MessageD"
           name="MessageD"
         /><br>
@@ -52,19 +56,22 @@
         <input
           type="number"
           min="0"
+          class="offset"
           id="offsetdc"
           name="Key"
         />
 
-      <button type="button" id="buttonDC" name="buttonDC" >Decodificar</button><br>
+      <button type="button" class="button" id="buttonDC" name="buttonDC" >Decodificar</button><br>
 
       <p>Sua mensagem Decodificada é:</p>
-
+   
+    
       <div id="valDcrypt">
 
       </div>
 
     </form><br>
+  </div> 
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

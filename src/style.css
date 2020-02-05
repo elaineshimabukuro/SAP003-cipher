@@ -1,91 +1,77 @@
 body{
-  background-image: url(https://i.pinimg.com/originals/2f/f4/7f/2ff47f3e92cc784e5dd607978b92f700.jpg);
-  background-repeat:no-repeat;
+  background-image: url(https://i.pinimg.com/originals/f3/31/b0/f331b073f179ce2ec625ed8915c6f8c8.jpg);
   background-position: center;
-  background-attachment: fixed;
-  background-position-y: 200px;
+  background-attachment: fixed;  
 }
 
-/*caracteristicas do header*/
-div#root {
-  display: inline-block;
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Lexend Zetta', sans-serif;
-  font-size: 35px;
-  position:relative;
-  top: auto;
-  bottom: auto;
-  right: 10%;
-  left: 17%;
-
+  font-size: 168%;
+  color: #9C7C38;
+  text-shadow: 6px 2px #000000;
+}
+h2{
+  color: aquamarine;
 }
 
-div#subtitle {
-  display: inline-block;
-  font-family: 'Lexend Zetta', sans-serif;
-  font-size: 10px;
-  position:absolute;
-  top: 3%;
-  bottom: auto;
-  right: 12%;
-  left: 17.5%;
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 4%;
 }
-
-
-/*caracteristicas do formulário de Codificar*/
-form#Cod{
-  display: inline-block;
-  text-align: center;
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  width: 30%;
   font-size: 25px;
-  font-family: 'Patrick Hand', cursive;
-  position: absolute;
-  top: 180px;
-  bottom: 0px;
-  right: 900px;
-  left: 0px;
+  font-family: 'Cambay', sans-serif;
+  font-weight: bold;
+  margin: auto;
+  color: #fff6af;
+  text-shadow: 2px 3px #000000;
 }
 
-input#offsetcd{
-  width: 40px;
+.offset{
+  display: flex;
+  width: 10%;
+  height: 29px;
   border-style: solid;
-  border-color: #0458CA;
-}
-
-input#MessageC{
-  width: 300px;
-  height: 100px;
-  border-style: solid;
-  border-color: #1575F7;
-  margin: 20px;
-  text-align: justify;
-}
-
-
-/*caracteristicas do formulário de Decodificar*/
-form#Decod{
-  display: inline-block;
+  border-color: #ffa515;
+  margin: 2%;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Patrick Hand', cursive;
-  position: absolute;
-  top: 180px;
-  bottom: 350px;
-  right: 0px;
-  left: 900px;
-  float: right;
-
+  font-size: 80%;
+  padding: 1%;
 }
 
-input#offsetdc{
-  width: 40px;
-  border-style: solid;
-  border-color: #0458CA;
-}
-
-input#MessageD{
-  width: 300px;
+.message{
+  display: flex;
+  width: 77%;
   height: 100px;
-  border-style: solid;
-  border-color: #1575F7;
-  margin: 20px;
-  text-align: justify;
+  border-style: groove;
+  box-shadow: black;
+  border-color: #ffa515;
+  margin: 5%;
+  text-align: center;
+  padding: 2%;
+  font-size: 90%;
 }
+
+.button{
+  box-shadow: 3px 4px 0px 0px #fff6af;
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  background-color: #ffec64;
+  border-radius: 5px;
+  border: 1px solid #ffaa22;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 29px;
+  margin: 3%;
+  text-shadow: 0px 1px 0px #ffee66;
+}
+

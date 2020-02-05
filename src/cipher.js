@@ -80,3 +80,19 @@ function cipherDecode(offsetdc, MessageD) {
 
   return valDcrypt;
 }
+
+ let video = document.queryselector('.video');
+
+ function init (){
+   document.queryselector('.play').addEventlistner('playVideo');
+ }
+
+ function playVideo(){
+   if (video.classList.contains('playing')){
+     video.pause();
+     video.classList.remove('playing');
+   } else{
+     video.play();
+     video.classList.add('playing');
+   }
+ }
